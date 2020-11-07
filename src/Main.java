@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class Main {
     public static void main(String[] args) {
-        try {
+        /*try {
 
             ServerSocket server = new ServerSocket(50000);
             Socket socket = server.accept();
@@ -16,6 +16,6 @@ public class Main {
 
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 }

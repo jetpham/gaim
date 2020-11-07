@@ -13,11 +13,4 @@ public class Playground {
         return this.area;
     }
 
-    public boolean isTrue(boolean value) {
-        if (value == true) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 }
