@@ -1,5 +1,4 @@
-package Moves;
-
+/*
 import java.util.Random;
 
 public class Thwack extends Move {
@@ -18,3 +17,4 @@ public class Thwack extends Move {
         return (random.nextDouble() <= hitProbability) ? currentDamageAmount : 0;
     }
 }
+*/

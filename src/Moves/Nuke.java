@@ -1,6 +1,4 @@
-package Moves;
-
-public class Nuke extends Move {
+/*public class Nuke extends Move {
     private int opponentDamageAmount = 48, selfDamageAmount = 24;
     private int opponentDamageChangePerUpgrade = 8, selfDamageChangePerUpgrade = 2;
 
@@ -25,4 +23,4 @@ public class Nuke extends Move {
         opponentDamageAmount += opponentDamageChangePerUpgrade;
         selfDamageAmount += selfDamageChangePerUpgrade;
     }
-}
+}*/
