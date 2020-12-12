@@ -1,18 +1,20 @@
-package Moves;
 
 public class Move {
     protected int currentDamageAmount;
     protected int currentLevel;
     protected double baseCostToUpgrade, amountChangePerUpgrade;
+    protected int opponentDamageAmount, selfDamageAmount;
+    protected Player self, opponent;
 
-    public Move(int currentDamageAmount, int currentLevel, int baseCostToUpgrade, int amountChangePerUpgrade) {
-        this.currentDamageAmount = currentDamageAmount;
-        this.currentLevel = currentLevel;
-        this.baseCostToUpgrade = baseCostToUpgrade;
-        this.amountChangePerUpgrade = amountChangePerUpgrade;
+    public Move(Player opponent, int damageAmount/*, int currentLevel, int baseCostToUpgrade, int amountChangePerUpgrade*/) {
+//        this.currentDamageAmount = currentDamageAmount;
+//        this.currentLevel = currentLevel;
+//        this.baseCostToUpgrade = baseCostToUpgrade;
+//        this.amountChangePerUpgrade = amountChangePerUpgrade;
+        opponent.takeDamage(damageAmount);
     }
 
-    public Move(int currentLevel, int baseCostToUpgrade) {
+    /*public Move(int currentLevel, int baseCostToUpgrade) {
         this.currentLevel = currentLevel;
         this.baseCostToUpgrade = baseCostToUpgrade;
     }
@@ -35,6 +37,7 @@ public class Move {
         }
         currentLevel++;
         currentDamageAmount += amountChangePerUpgrade;
-    }
+    }*/
+
     
 }

@@ -1,4 +1,3 @@
-package Items;
 
 public class Charm {
     private double totalProbability = 0.75;
