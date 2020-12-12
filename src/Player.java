@@ -39,9 +39,27 @@ public class Player {
             case "punch":
                 new Punch(opponent);
                 break;
+            case "nuke":
+                if (currentHealth > 48) {
+                    new Nuke(opponent, this);
+                } else {
+                    System.out.println("You don't have enough health to nuke!");
+                }
+                break;
+            case "thwack":
+                new Thwack(opponent);
+                break;
             default:
                 break;
         }
+    }
+
+    public void printHealth(int playerNumber) {
+        System.out.print("Player " + playerNumber + "'s health: ");
+        for (int i = 0; i < getCurrentHealth() / 3; i++) {
+            System.out.print("|");
+        }
+        System.out.print("\n");
     }
 
 }

@@ -7,13 +7,15 @@ public class Main {
         Player player2 = new Player();
         boolean player1sturn = true;
         while (player1.getCurrentHealth() > 0 && player2.getCurrentHealth() > 0) {
-            System.out.println("Player 1's health: " + player1.getCurrentHealth() + "\nPlayer 2's current health: " + player2.getCurrentHealth());
-            System.out.print("Enter the move type, " + (player1sturn ? "player 1: " : "player 2: "));
+            player1.printHealth(1);
+            player2.printHealth(2);
+            System.out.print("\nEnter the move type, " + (player1sturn ? "player 1: " : "player 2: "));
             Scanner sc = new Scanner(System.in);
             (player1sturn ? player1 : player2).makeMove(sc.nextLine().toLowerCase(), (player1sturn ? player2 : player1));
             player1sturn = !player1sturn;
         }
-        System.out.println("Player 1's health: " + player1.getCurrentHealth() + "\nPlayer 2's current health: " + player2.getCurrentHealth());
+        player1.printHealth(1);
+        player2.printHealth(2);
         if (player1.getCurrentHealth() > 0) {
             System.out.println("Congratulations, player 1!");
         } else {
