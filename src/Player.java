@@ -1,12 +1,11 @@
-import java.lang.reflect.Type;
-import java.net.PortUnreachableException;
+
 
 public class Player {
     private String name;
     private int maxHealth, currentHealth;
     private int points;
 
-    //private Move punch = new Punch(), nuke = new Nuke(), goFirst = new GoFirst(), startingHealth = new StartingHealth(), thwack = new Thwack();
+    //private Move punch = new Moves.Punch(), nuke = new Nuke(), goFirst = new GoFirst(), startingHealth = new StartingHealth(), thwack = new Thwack();
 
     public Player() {
         this.maxHealth = 72;
@@ -32,7 +31,6 @@ public class Player {
     public void setName(String name) {
         this.name = name;
     }
-
     public String getName() {
         return name;
     }
