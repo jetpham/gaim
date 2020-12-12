@@ -1,6 +1,5 @@
-
 public class Charm {
-    private double totalProbability = 0.75;
+    private final double totalProbability = 0.75;
 
     public Charm() {
 

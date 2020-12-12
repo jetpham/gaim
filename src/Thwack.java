@@ -1,5 +1,5 @@
-
 import java.util.Random;
+
 /*
 public class Thwack extends Move {
     private final Random random = new Random();

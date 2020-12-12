@@ -1,4 +1,3 @@
-
 public class Move {
     protected int currentDamageAmount;
     protected int currentLevel;
@@ -39,5 +38,5 @@ public class Move {
         currentDamageAmount += amountChangePerUpgrade;
     }*/
 
-    
+
 }

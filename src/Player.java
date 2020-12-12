@@ -1,5 +1,3 @@
-
-
 public class Player {
     private String name;
     private int maxHealth, currentHealth;
@@ -31,6 +29,7 @@ public class Player {
     public void setName(String name) {
         this.name = name;
     }
+
     public String getName() {
         return name;
     }
